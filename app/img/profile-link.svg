@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="242 2511.3 74.03 74.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e6e6e6;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #2660a4;
+      }
+
+      .cls-4 {
+        fill: #f79413;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="_version_:_1.5.0_viewSource_:_x_:_0_y_:_0_width_:_52.974_height_:_52.974_resources_:_clipPaths_:_filters_:_gradients_:_masks_:_patterns_:_children_:_style_:_stroke_:_type_:_none_fill_:_type_:_solid_color_:_mode_:_RGB_value_:_r_:_0_g_:_0_b_:_0_name_:_type_:_group_group_:_children_:_style_:_stroke_:_type_:_none_fill_:_type_:_solid_color_:_mode_:_RGB_value_:_r_:_0_g_:_0_b_:_0_name_:_type_:_shape_shape_:_type_:_path_path_:_M_49.467_3.51_c_-4.677_-4.679_-12.291_-4.681_-16.97_0_l_-9.192_9.192_c_-0.391_0.391_-0.391_1.023_0_1.414_s_1.023_0.391_1.414_0_l_9.192_-9.192_c_1.88_-1.88_4.391_-2.915_7.07_-2.915_c_2.681_0_5.191_1.036_7.071_2.916_s_2.916_4.391_2.916_7.071_c_0_2.68_-1.036_5.19_-2.916_7.07_L_36.033_31.088_c_-3.898_3.898_-10.244_3.898_-14.143_0_c_-0.391_-0.391_-1.023_-0.391_-1.414_0_s_-0.391_1.023_0_1.414_c_2.34_2.339_5.412_3.509_8.485_3.509_s_6.146_-1.17_8.485_-3.509_L_49.467_20.48_c_2.258_-2.258_3.502_-5.271_3.502_-8.485_C_52.969_8.781_51.725_5.768_49.467_3.51_Z_style_:_stroke_:_type_:_none_fill_:_type_:_solid_color_:_mode_:_RGB_value_:_r_:_0_g_:_0_b_:_0_name_:_type_:_shape_shape_:_type_:_path_path_:_M_26.84_40.279_l_-7.778_7.778_c_-1.88_1.88_-4.391_2.916_-7.071_2.916_c_-2.68_0_-5.19_-1.036_-7.071_-2.916_c_-3.898_-3.898_-3.898_-10.243_0_-14.142_l_11.314_-11.314_c_3.899_-3.898_10.244_-3.896_14.142_0_c_0.391_0.391_1.023_0.391_1.414_0_s_0.391_-1.023_0_-1.414_c_-4.677_-4.679_-12.291_-4.681_-16.97_0_L_3.505_32.502_c_-2.258_2.258_-3.501_5.271_-3.501_8.485_c_0_3.214_1.244_6.227_3.502_8.484_s_5.271_3.502_8.484_3.502_c_3.215_0_6.228_-1.244_8.485_-3.502_l_7.778_-7.778_c_0.391_-0.391_0.391_-1.023_0_-1.414_S_27.231_39.889_26.84_40" data-name="{
+	&quot;version&quot;: &quot;1.5.0&quot;,
+	&quot;viewSource&quot;: {
+		&quot;x&quot;: 0,
+		&quot;y&quot;: 0,
+		&quot;width&quot;: 52.974,
+		&quot;height&quot;: 52.974
+	},
+	&quot;resources&quot;: {
+		&quot;clipPaths&quot;: {},
+		&quot;filters&quot;: {},
+		&quot;gradients&quot;: {},
+		&quot;masks&quot;: {},
+		&quot;patterns&quot;: {}
+	},
+	&quot;children&quot;: [
+		{
+			&quot;style&quot;: {
+				&quot;stroke&quot;: {
+					&quot;type&quot;: &quot;none&quot;
+				},
+				&quot;fill&quot;: {
+					&quot;type&quot;: &quot;solid&quot;,
+					&quot;color&quot;: {
+						&quot;mode&quot;: &quot;RGB&quot;,
+						&quot;value&quot;: {
+							&quot;r&quot;: 0,
+							&quot;g&quot;: 0,
+							&quot;b&quot;: 0
+						}
+					}
+				}
+			},
+			&quot;name&quot;: &quot;&quot;,
+			&quot;type&quot;: &quot;group&quot;,
+			&quot;group&quot;: {
+				&quot;children&quot;: [
+					{
+						&quot;style&quot;: {
+							&quot;stroke&quot;: {
+								&quot;type&quot;: &quot;none&quot;
+							},
+							&quot;fill&quot;: {
+								&quot;type&quot;: &quot;solid&quot;,
+								&quot;color&quot;: {
+									&quot;mode&quot;: &quot;RGB&quot;,
+									&quot;value&quot;: {
+										&quot;r&quot;: 0,
+										&quot;g&quot;: 0,
+										&quot;b&quot;: 0
+									}
+								}
+							}
+						},
+						&quot;name&quot;: &quot;&quot;,
+						&quot;type&quot;: &quot;shape&quot;,
+						&quot;shape&quot;: {
+							&quot;type&quot;: &quot;path&quot;,
+							&quot;path&quot;: &quot;M 49.467 3.51 c -4.677 -4.679 -12.291 -4.681 -16.97 0 l -9.192 9.192 c -0.391 0.391 -0.391 1.023 0 1.414 s 1.023 0.391 1.414 0 l 9.192 -9.192 c 1.88 -1.88 4.391 -2.915 7.07 -2.915 c 2.681 0 5.191 1.036 7.071 2.916 s 2.916 4.391 2.916 7.071 c 0 2.68 -1.036 5.19 -2.916 7.07 L 36.033 31.088 c -3.898 3.898 -10.244 3.898 -14.143 0 c -0.391 -0.391 -1.023 -0.391 -1.414 0 s -0.391 1.023 0 1.414 c 2.34 2.339 5.412 3.509 8.485 3.509 s 6.146 -1.17 8.485 -3.509 L 49.467 20.48 c 2.258 -2.258 3.502 -5.271 3.502 -8.485 C 52.969 8.781 51.725 5.768 49.467 3.51 Z&quot;
+						}
+					},
+					{
+						&quot;style&quot;: {
+							&quot;stroke&quot;: {
+								&quot;type&quot;: &quot;none&quot;
+							},
+							&quot;fill&quot;: {
+								&quot;type&quot;: &quot;solid&quot;,
+								&quot;color&quot;: {
+									&quot;mode&quot;: &quot;RGB&quot;,
+									&quot;value&quot;: {
+										&quot;r&quot;: 0,
+										&quot;g&quot;: 0,
+										&quot;b&quot;: 0
+									}
+								}
+							}
+						},
+						&quot;name&quot;: &quot;&quot;,
+						&quot;type&quot;: &quot;shape&quot;,
+						&quot;shape&quot;: {
+							&quot;type&quot;: &quot;path&quot;,
+							&quot;path&quot;: &quot;M 26.84 40.279 l -7.778 7.778 c -1.88 1.88 -4.391 2.916 -7.071 2.916 c -2.68 0 -5.19 -1.036 -7.071 -2.916 c -3.898 -3.898 -3.898 -10.243 0 -14.142 l 11.314 -11.314 c 3.899 -3.898 10.244 -3.896 14.142 0 c 0.391 0.391 1.023 0.391 1.414 0 s 0.391 -1.023 0 -1.414 c -4.677 -4.679 -12.291 -4.681 -16.97 0 L 3.505 32.502 c -2.258 2.258 -3.501 5.271 -3.501 8.485 c 0 3.214 1.244 6.227 3.502 8.484 s 5.271 3.502 8.484 3.502 c 3.215 0 6.228 -1.244 8.485 -3.502 l 7.778 -7.778 c 0.391 -0.391 0.391 -1.023 0 -1.414 S 27.231 39.889 26.84 40" class="cls-1" d="M.5.5H74.53V74.53H.5Z" transform="translate(-0.5 -0.5)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_58" data-name="Mask Group 58" class="cls-2" transform="translate(242 2511.3)">
+    <g id="Group_1958" data-name="Group 1958">
+      <g id="unlink_1_" data-name="unlink (1)" transform="translate(10.309 7.991)">
+        <path id="Path_151" data-name="Path 151" class="cls-3" d="M43.783,3.87a13.288,13.288,0,0,0-18.748,0L14.879,14a1.1,1.1,0,0,0,1.562,1.559L26.6,5.429A11.036,11.036,0,0,1,42.22,21.021L28.941,34.276a11.08,11.08,0,0,1-15.625,0,1.1,1.1,0,1,0-1.562,1.559,13.291,13.291,0,0,0,18.748,0L43.783,22.58a13.244,13.244,0,0,0,0-18.71Z" transform="translate(10.863 0)"/>
+        <path id="Path_152" data-name="Path 152" class="cls-4" d="M29.65,34.93l-8.593,8.576A11.036,11.036,0,0,1,5.433,27.914l12.5-12.474a11.08,11.08,0,0,1,15.624,0,1.1,1.1,0,0,0,1.562-1.559,13.288,13.288,0,0,0-18.748,0L3.87,26.356a13.216,13.216,0,0,0,9.374,22.57,13.173,13.173,0,0,0,9.374-3.861l8.593-8.576A1.1,1.1,0,1,0,29.65,34.93Z" transform="translate(-0.002 9.479)"/>
+      </g>
+    </g>
+  </g>
+</svg>

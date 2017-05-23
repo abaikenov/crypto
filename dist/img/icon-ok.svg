@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="332.987 2361 20.558 20.558">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #747474;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #4bbd5c;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #4bbd5c;
+        stroke-width: 2px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="_version_:_1.5.0_viewSource_:_x_:_0_y_:_0_width_:_174.239_height_:_174.239_resources_:_clipPaths_:_filters_:_gradients_:_masks_:_patterns_:_children_:_style_:_stroke_:_type_:_none_fill_:_type_:_solid_color_:_mode_:_RGB_value_:_r_:_0_g_:_0_b_:_0_name_:_type_:_group_group_:_children_:_style_:_stroke_:_type_:_none_fill_:_type_:_solid_color_:_mode_:_RGB_value_:_r_:_0_g_:_0_b_:_0_name_:_type_:_shape_shape_:_type_:_path_path_:_M_87.12_0_C_39.082_0_0_39.082_0_87.12_s_39.082_87.12_87.12_87.12_s_87.12_-39.082_87.12_-87.12_S_135.157_0_87.12_0_Z_M_87.12_159.305_c_-39.802_0_-72.185_-32.383_-72.185_-72.185_S_47.318_14.935_87.12_14.935_s_72.185_32.383_72.185_72.185_S_126.921_159.305_87.12_159.305_Z_style_:_stroke_:_type_:_none_fill_:_type_:_solid_color_:_mode_:_RGB_value_:_r_:_0_g_:_0_b_:_0_name_:_type_:_shape_shape_:_type_:_path_path_:_M_120.83_53.414_c_-2.917_-2.917_-7.647_-2.917_-10.559_0_L_87.12_76.568_L_63.969_53.414_c_-2.917_-2.917_-7.642_-2.917_-10.559_0_s_-2.917_7.642_0_10.559_l_23.151_23.153_L_53.409_110.28_c_-2.917_2.917_-2.917_7.642_0_10.559_c_1.458_1.458_3.369_2.188_5.28_2.188_c_1.911_0_3.824_-0.729_5.28_-2.188_L_87.12_97.686_l_23.151_23.153_c_1.458_1.458_3.369_2.188_5.28_2.188_c_1.911_0_3.821_-0.729_5.28_-2.188_c_2.917_-2.917_2.917_-7.642_0_-10.559_L_97.679_87.127_l_23.151_-23.153_C_123.747_61.057_123.747_56.331_120.83_53" data-name="{
+	&quot;version&quot;: &quot;1.5.0&quot;,
+	&quot;viewSource&quot;: {
+		&quot;x&quot;: 0,
+		&quot;y&quot;: 0,
+		&quot;width&quot;: 174.239,
+		&quot;height&quot;: 174.239
+	},
+	&quot;resources&quot;: {
+		&quot;clipPaths&quot;: {},
+		&quot;filters&quot;: {},
+		&quot;gradients&quot;: {},
+		&quot;masks&quot;: {},
+		&quot;patterns&quot;: {}
+	},
+	&quot;children&quot;: [
+		{
+			&quot;style&quot;: {
+				&quot;stroke&quot;: {
+					&quot;type&quot;: &quot;none&quot;
+				},
+				&quot;fill&quot;: {
+					&quot;type&quot;: &quot;solid&quot;,
+					&quot;color&quot;: {
+						&quot;mode&quot;: &quot;RGB&quot;,
+						&quot;value&quot;: {
+							&quot;r&quot;: 0,
+							&quot;g&quot;: 0,
+							&quot;b&quot;: 0
+						}
+					}
+				}
+			},
+			&quot;name&quot;: &quot;&quot;,
+			&quot;type&quot;: &quot;group&quot;,
+			&quot;group&quot;: {
+				&quot;children&quot;: [
+					{
+						&quot;style&quot;: {
+							&quot;stroke&quot;: {
+								&quot;type&quot;: &quot;none&quot;
+							},
+							&quot;fill&quot;: {
+								&quot;type&quot;: &quot;solid&quot;,
+								&quot;color&quot;: {
+									&quot;mode&quot;: &quot;RGB&quot;,
+									&quot;value&quot;: {
+										&quot;r&quot;: 0,
+										&quot;g&quot;: 0,
+										&quot;b&quot;: 0
+									}
+								}
+							}
+						},
+						&quot;name&quot;: &quot;&quot;,
+						&quot;type&quot;: &quot;shape&quot;,
+						&quot;shape&quot;: {
+							&quot;type&quot;: &quot;path&quot;,
+							&quot;path&quot;: &quot;M 87.12 0 C 39.082 0 0 39.082 0 87.12 s 39.082 87.12 87.12 87.12 s 87.12 -39.082 87.12 -87.12 S 135.157 0 87.12 0 Z M 87.12 159.305 c -39.802 0 -72.185 -32.383 -72.185 -72.185 S 47.318 14.935 87.12 14.935 s 72.185 32.383 72.185 72.185 S 126.921 159.305 87.12 159.305 Z&quot;
+						}
+					},
+					{
+						&quot;style&quot;: {
+							&quot;stroke&quot;: {
+								&quot;type&quot;: &quot;none&quot;
+							},
+							&quot;fill&quot;: {
+								&quot;type&quot;: &quot;solid&quot;,
+								&quot;color&quot;: {
+									&quot;mode&quot;: &quot;RGB&quot;,
+									&quot;value&quot;: {
+										&quot;r&quot;: 0,
+										&quot;g&quot;: 0,
+										&quot;b&quot;: 0
+									}
+								}
+							}
+						},
+						&quot;name&quot;: &quot;&quot;,
+						&quot;type&quot;: &quot;shape&quot;,
+						&quot;shape&quot;: {
+							&quot;type&quot;: &quot;path&quot;,
+							&quot;path&quot;: &quot;M 120.83 53.414 c -2.917 -2.917 -7.647 -2.917 -10.559 0 L 87.12 76.568 L 63.969 53.414 c -2.917 -2.917 -7.642 -2.917 -10.559 0 s -2.917 7.642 0 10.559 l 23.151 23.153 L 53.409 110.28 c -2.917 2.917 -2.917 7.642 0 10.559 c 1.458 1.458 3.369 2.188 5.28 2.188 c 1.911 0 3.824 -0.729 5.28 -2.188 L 87.12 97.686 l 23.151 23.153 c 1.458 1.458 3.369 2.188 5.28 2.188 c 1.911 0 3.821 -0.729 5.28 -2.188 c 2.917 -2.917 2.917 -7.642 0 -10.559 L 97.679 87.127 l 23.151 -23.153 C 123.747 61.057 123.747 56.331 120.83 53" class="cls-1" width="20.558" height="20.558"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1958" data-name="Group 1958" transform="translate(2 1926)">
+    <g id="Mask_Group_55" data-name="Mask Group 55" class="cls-2" transform="translate(330.987 435)">
+      <g id="delete-button">
+        <path id="Path_147" data-name="Path 147" class="cls-3" d="M10.279,0A10.308,10.308,0,1,0,20.558,10.308,10.305,10.305,0,0,0,10.279,0Zm0,18.848A8.541,8.541,0,1,1,18.8,10.308,8.539,8.539,0,0,1,10.279,18.848Z"/>
+      </g>
+    </g>
+    <path id="Path_1013" data-name="Path 1013" class="cls-4" d="M144.1,297.151l2.713,3.063,1.369-1.705,2.259-2.814,1.219-1.518L151.8,294" transform="translate(193.185 147.886)"/>
+  </g>
+</svg>

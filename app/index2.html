@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crypto</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="padding">
+<header class="menu">
+    <div class="container">
+        <a class="logo" href="/"></a>
+        <div class="toggle-menu"><a class="icon-menu" href="#"></a></div>
+        <ul class="nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Кабинет</a></li>
+            <li><a href="#">Сутруктура</a></li>
+            <li><a href="#">История операций</a></li>
+            <li class="cog"><a href="#"><i class="icon-cog"></i>Настройки</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="content container">
+    <aside class="profile">
+        <div class="block">
+            <div class="profile-info">
+                <img src="img/user-profile.svg"/>
+                <p>Zholamanoff</p>
+            </div>
+
+            <div class="extends">
+                <div class="extend">
+                    <div class="extend-img">
+                        <img src="img/profile-cup.png">
+                    </div>
+                    <div class="extend-info">
+                        <h5>У вас нет ранга</h5>
+                        <p class="text-green"><i class="icon icon-ok"></i> Есть реферальные вознаграждения</p>
+                        <a href="#" class="btn btn-blue">Смотреть детали</a>
+                    </div>
+                </div>
+
+                <div class="extend">
+                    <div class="extend-img">
+                        <img src="img/profile-link.svg">
+                    </div>
+                    <div class="extend-info">
+                        <h5>Реферальная ссылка:</h5>
+                        <p><a href="#">https://cryptopoint.net/signup?ref=zholamanoff</a></p>
+                        <a href="#" class="btn btn-blue">Скопировать</a>
+                    </div>
+                </div>
+
+                <div class="extend">
+                    <div class="extend-img">
+                        <img src="img/profile-link.svg">
+                    </div>
+                    <div class="extend-info">
+                        <h5>Тариф:</h5>
+                        <p class="text-red"><i class="icon icon-close"></i> Нет активного тарифа</p>
+                        <a href="#" class="btn btn-blue">Выбрать тариф</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extends-toggle">
+                <div class="state-down">
+                    <i class="icon icon-down"></i> Детали и события аккаунта
+                </div>
+                <div class="state-up">
+                    <i class="icon icon-up"></i> Скрыть детали аккаунта
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="entities">
+        <div class="entity">
+            <div class="block balance">
+                <h3>Баланс счета EDR</h3>
+                <div class="total">
+                    <i class="icon icon-edr"></i>
+                    200.1698 edr
+                </div>
+                <div class="currency">
+                    <span>~51 298 KZT</span>
+                    <span>1 EDR = 13 KZT</span>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn btn-purple">Пополнить</a>
+                    <a href="#" class="btn btn-purple">Вывести</a>
+                    <a href="#" class="btn btn-purple" data-toggle="modal" data-target="#modal">Отправить</a>
+                </div>
+            </div>
+        </div>
+        <div class="entity">
+            <div class="block balance">
+                <h3>Баланс счета BTC</h3>
+                <div class="total">
+                    <i class="icon icon-btc"></i>
+                    1.45671698 btc
+                </div>
+                <div class="currency">
+                    <span>~21 578 KZT</span>
+                    <span>1 BTC = 350 000 KZT</span>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn btn-yellow">Пополнить</a>
+                    <a href="#" class="btn btn-yellow">Вывести</a>
+                    <a href="#" class="btn btn-yellow">Отправить</a>
+                </div>
+            </div>
+        </div>
+        <div class="entity">
+            <div class="block chart">
+                <div class="title">
+                    <i class="icon icon-edr"></i>
+                    Майнинг EDR
+                </div>
+                <hr>
+                <div class="chart-content">
+                    <img src="img/chart.png" />
+                </div>
+                <p>Добыто за все время:</p>
+                <div class="total text-purple">100.2587 EDR</div>
+            </div>
+        </div>
+        <div class="entity">
+            <div class="block chart">
+                <div class="title">
+                    <i class="icon icon-btc"></i>
+                    Реферальные вознаграждения BTC
+                </div>
+                <hr>
+                <div class="chart-content">
+                    <img src="img/chart.png" />
+                </div>
+                <p>Добыто за все время:</p>
+                <div class="total text-yellow">1.12378945 BCT</div>
+            </div>
+        </div>
+        <div class="entity">
+            <div class="block chart">
+                <div class="title">
+                    <i class="icon icon-edr"></i>
+                    Реферальные вознаграждения EDR
+                </div>
+                <hr>
+                <div class="chart-content">
+                    <img src="img/chart.png" />
+                </div>
+                <p>Добыто за все время:</p>
+                <div class="total text-purple">100.2587 EDR</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="modal">
+    <span class="modal-close"></span>
+    <!-- Тут любoе сoдержимoе -->
+</div>
+<div id="overlay"></div>
+
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1000 @@
+@import "_extend.sass"
+
+// reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+  display: block
+
+body
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+  content: ''
+  content: none
+
+ins
+  text-decoration: none
+
+del
+  text-decoration: line-through
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+*, html, body
+  margin: 0
+  padding: 0
+
+html, body
+  min-height: 100%
+
+body
+  background-color: #EDF2F6
+  font-family: 'PT Sans', sans-serif
+  &.main
+    background: #0B232F url("../img/bg.png") no-repeat center top
+    background-size: cover
+    background-position-x: 50%
+    @media screen and (max-width: $main-tablet-portrait)
+      background-position-x: calc(50% - 80px)
+    @media screen and (max-width: $main-phone-big)
+      background-position-x: calc(50% + 10px)
+    @media screen and (max-width: $main-phone-small)
+      background-position-x: calc(50% - 50px)
+    header
+      display: flex
+      justify-content: space-between
+      max-width: 1530px
+      padding-top: 39px
+      padding-bottom: 0
+      margin: 0 auto 210px
+      background: none
+      @media screen and (max-width: $main-web-medium)
+        max-width: 960px
+        padding-top: 23px
+        margin-bottom: 132px
+      @media screen and (max-width: $main-tablet-landscape)
+        padding: 0 15px
+        max-width: 995px
+        padding-top: 15px
+        margin-bottom: 136px
+      @media screen and (max-width: $main-tablet-portrait)
+        max-width: 720px
+        margin-bottom: 174px
+      @media screen and (max-width: $main-phone-big)
+        max-width: 450px
+        margin-bottom: 70px
+      @media screen and (max-width: $main-phone-small)
+        max-width: 290px
+        margin-bottom: 83px
+    .logo
+      font-weight: 700
+      padding-left: 102px
+      font-size: 26px
+      @media screen and (max-width: $main-web-medium)
+        padding-left: 64px
+        font-size: 18px
+      @media screen and (max-width: $main-tablet-landscape)
+        padding-left: 64px
+      @media screen and (max-width: $main-tablet-portrait)
+        padding-left: 54px
+      @media screen and (max-width: $main-phone-big)
+        padding-left: 45px
+        font-size: 9px
+      @media screen and (max-width: $main-phone-small)
+        padding-left: 45px
+        font-size: 9px
+    h1
+      color: #ffffff
+      text-transform: uppercase
+      font-size: 85px
+      line-height: 97px
+      letter-spacing: 8px
+      margin: 0
+      @media screen and (max-width: $main-web-medium)
+        font-size: 55px
+        line-height: 67px
+        letter-spacing: 7px
+      @media screen and (max-width: $main-phone-big)
+        font-size: 36px
+        line-height: 45px
+        letter-spacing: 6px
+      @media screen and (max-width: $main-phone-small)
+        font-size: 24px
+        line-height: 30px
+        letter-spacing: 5px
+    section
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      max-width: 1530px
+      margin: 0 auto
+      @media screen and (max-width: $main-web-medium)
+        max-width: 960px
+      @media screen and (max-width: $main-tablet-landscape)
+        padding: 0 15px
+        max-width: 995px
+      @media screen and (max-width: $main-tablet-portrait)
+        max-width: 720px
+      @media screen and (max-width: $main-phone-big)
+        max-width: 450px
+      @media screen and (max-width: $main-phone-small)
+        max-width: 290px
+      ul
+        margin-top: 60px
+        margin-bottom: 77px
+        @media screen and (max-width: $main-web-medium)
+          margin-top: 30px
+          margin-bottom: 45px
+        @media screen and (max-width: $main-phone-big)
+          margin-top: 24px
+          margin-bottom: 31px
+        @media screen and (max-width: $main-phone-small)
+          margin-top: 23px
+          margin-bottom: 30px
+        li
+          list-style-image: url("../img/list-style-cycle.png")
+          margin-left: 17px
+          color: #C2C2C2
+          font-size: 23px
+          line-height: 23px
+          margin-bottom: 23px
+          @media screen and (max-width: $main-web-medium)
+            font-size: 16px
+            line-height: 16px
+            margin-bottom: 14px
+          @media screen and (max-width: $main-phone-big)
+            font-size: 12px
+            line-height: 16px
+            margin-bottom: 9px
+      .buttons
+        display: flex
+        flex-direction: row
+        @media screen and (max-width: $main-phone-small)
+          flex-direction: column
+        .btn
+          padding: 17px 38px
+          text-decoration: none
+          color: #ffffff
+          font-size: 16px
+          border-radius: 5px
+        .btn-blue
+          background-color: #2660A4
+          margin-right: 15px
+          @media screen and (max-width: $main-phone-small)
+            margin-right: 0
+            margin-bottom: 10px
+        .btn-orange
+          background-color: #E4572E
+  &.padding
+    @media screen and (max-width: $tablet-small)
+      padding-top: 44px
+
+header
+  background: #2660A4
+  padding: 18px 0
+  @media screen and (max-width: $tablet-small)
+    padding: 12px 0
+    &.menu
+      position: absolute
+      width: 100%
+      top: 0
+  .container
+    align-items: center
+    .toggle-menu
+      display: none
+      width: 100%
+      justify-content: flex-end
+      .icon-menu
+        background: url("../img/menu-icon.png")
+        width: 30px
+        height: 20px
+        margin-right: 15px
+        cursor: pointer
+    @media screen and (max-width: $tablet-small)
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+      .logo, .icon-cog
+        display: none
+      .toggle-menu
+        display: flex
+      .nav
+        padding: 10px 0 25px
+        li
+          margin: 8px 25px
+  .nav
+    display: flex
+    flex-grow: 1
+    list-style: none
+    @media screen and (max-width: $tablet-small)
+      flex-direction: column
+      display: none
+    &.show
+      display: flex
+    li
+      margin-right: 45px
+      @media screen and (max-width: $web-medium)
+        margin-right: 36px
+      @media screen and (max-width: $web-small)
+        margin-right: 36px
+      @media screen and (max-width: $tablet-big)
+        margin-right: 25px
+      @media screen and (max-width: $tablet-medium)
+        margin-right: 25px
+  a
+    font-size: 19px
+    color: #ffffff
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+    &.to_nav
+      float: right
+      color: #fff
+      background: #4e4e4e
+      text-decoration: none
+      padding: 0 10px
+      font-size: 12px
+      font-weight: bold
+      line-height: 22px
+      height: 22px
+      text-transform: uppercase
+      letter-spacing: 0.1em
+      border-radius: 2px
+    @media screen and (max-width: $web-medium)
+      font-size: 15px
+    @media screen and (max-width: $web-small)
+      font-size: 15px
+    @media screen and (max-width: $tablet-big)
+      font-size: 19px
+    @media screen and (max-width: $tablet-medium)
+      font-size: 15px
+  .cog
+    flex-grow: 1
+    margin-right: 0 !important
+    a
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      @media screen and (max-width: $tablet-small)
+        justify-content: flex-start
+      .icon-cog
+        background: url("../img/cog.svg") no-repeat center
+        width: 18px
+        height: 18px
+        margin-right: 10px
+
+.container
+  display: flex
+  margin: 0 auto
+  max-width: 1500px
+  @media screen and (max-width: $web-medium)
+    max-width: 1120px
+  @media screen and (max-width: $web-small)
+    max-width: 930px
+  @media screen and (max-width: $tablet-big)
+    max-width: 990px
+  @media screen and (max-width: $tablet-medium)
+    max-width: 735px
+  @media screen and (max-width: $tablet-small)
+    max-width: 615px
+  @media screen and (max-width: $phone-big)
+    max-width: 525px
+  @media screen and (max-width: $phone-medium)
+    max-width: 330px
+  @media screen and (max-width: $phone-small)
+    max-width: 285px
+
+.logo
+  background-image: url("../img/logo.png")
+  background-repeat: no-repeat
+  background-position: left center
+  color: #ffffff
+  display: flex
+  justify-content: center
+  align-items: center
+  background-size: contain
+  min-width: 80px
+  height: 80px
+  margin-right: 40px
+  @media screen and (max-width: $web-medium)
+    min-width: 50px
+    height: 50px
+  @media screen and (max-width: $web-small)
+    margin-right: 25px
+    min-width: 40px
+    height: 40px
+  @media screen and (max-width: $tablet-big)
+    margin-right: 34px
+    min-width: 40px
+    height: 40px
+  @media screen and (max-width: $main-phone-big)
+    min-width: 32px
+    height: 32px
+  @media screen and (max-width: $main-phone-small)
+    min-width: 32px
+    height: 32px
+
+.btn
+  @include button()
+
+.btn-sign
+  display: flex
+  cursor: pointer
+  color: #ffffff
+  justify-content: center
+  align-items: center
+  border: 2px solid #ffffff
+  border-radius: 5px
+  padding: 29px 78px
+  font-size: 22px
+  @media screen and (max-width: $web-medium)
+    padding: 17px 47px
+    font-size: 16px
+  @media screen and (max-width: $phone-big)
+    padding: 9px 30px
+    font-size: 9px
+
+.block
+  background-color: #ffffff
+  border-radius: 5px
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15)
+  padding: 30px
+  @media screen and (max-width: $web-medium)
+    padding: 20px
+  @media screen and (max-width: $web-small)
+    padding: 15px
+
+.text-green
+  color: #4BBD5C
+
+.text-red
+  color: #960200
+
+.text-purple
+  color: #8C4E8C
+
+.text-yellow
+  color: #F76113
+
+.icon
+  background-repeat: no-repeat
+
+.content
+  padding-top: 60px
+  @media screen and (max-width: $tablet-big)
+    flex-direction: column
+    align-items: stretch
+    padding-top: 45px
+  @media screen and (max-width: $tablet-small)
+    padding-top: 30px
+  .profile
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    flex-shrink: 0
+    flex-basis: 480px
+    @media screen and (max-width: $web-medium)
+      flex-basis: 360px
+    @media screen and (max-width: $web-small)
+      flex-basis: 300px
+    @media screen and (max-width: $tablet-big)
+      flex-basis: 100%
+      margin-bottom: 30px
+      .extends
+        display: none
+    @media screen and (max-width: $phone-medium)
+      margin-bottom: 15px
+    .profile-info
+      color: #39546C
+      text-align: center
+      margin-bottom: 70px
+      font-size: 27px
+      @media screen and (max-width: $web-medium)
+        font-size: 23px
+        margin-bottom: 60px
+      @media screen and (max-width: $web-small)
+        font-size: 19px
+        margin-bottom: 40px
+      @media screen and (max-width: $tablet-big)
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 25px
+        margin-bottom: 20px
+      @media screen and (max-width: $tablet-medium)
+        font-size: 25px
+      @media screen and (max-width: $tablet-small)
+        font-size: 21px
+      @media screen and (max-width: $phone-big)
+        font-size: 24px
+      @media screen and (max-width: $phone-medium)
+        font-size: 21px
+      @media screen and (max-width: $phone-small)
+        font-size: 21px
+      img
+        width: 90px
+        margin-bottom: 15px
+        @media screen and (max-width: $web-medium)
+          width: 80px
+          margin-bottom: 7px
+        @media screen and (max-width: $web-small)
+          width: 60px
+          margin-bottom: 4px
+        @media screen and (max-width: $tablet-big)
+          width: 47px
+          margin-bottom: 0
+          margin-right: 23px
+        @media screen and (max-width: $tablet-medium)
+          width: 47px
+          margin-bottom: 0
+          margin-right: 21px
+        @media screen and (max-width: $tablet-small)
+          width: 30px
+          margin-bottom: 0
+          margin-right: 16px
+        @media screen and (max-width: $phone-big)
+          width: 30px
+          margin-bottom: 0
+          margin-right: 16px
+        @media screen and (max-width: $phone-medium)
+          width: 30px
+          margin-bottom: 0
+          margin-right: 16px
+        @media screen and (max-width: $phone-small)
+          width: 30px
+          margin-bottom: 0
+          margin-right: 16px
+    .extend
+      display: flex
+      flex-wrap: nowrap
+      margin-bottom: 60px
+      @media screen and (max-width: $web-medium)
+        margin-bottom: 55px
+      @media screen and (max-width: $web-small)
+        margin-bottom: 50px
+      @media screen and (max-width: $tablet-big)
+        margin-bottom: 45px
+      @media screen and (max-width: $phone-medium)
+        margin-bottom: 30px
+      .extend-img
+        margin-right: 30px
+        @media screen and (max-width: $web-medium)
+          margin-right: 20px
+        @media screen and (max-width: $web-small)
+          margin-right: 15px
+        img
+          width: 60px
+          @media screen and (max-width: $web-medium)
+            width: 40px
+          @media screen and (max-width: $web-small)
+            width: 45px
+      .extend-info
+        h5
+          font-family: 'Proxima', serif
+          font-weight: 300
+          font-size: 24px
+          margin-bottom: 20px
+          @media screen and (max-width: $web-medium)
+            font-size: 20px
+          @media screen and (max-width: $web-small)
+            font-size: 18px
+        p
+          display: flex
+          align-items: center
+          margin-bottom: 25px
+          font-size: 15px
+          @media screen and (max-width: $web-medium)
+            font-size: 13px
+          @media screen and (max-width: $web-small)
+            font-size: 11px
+          a
+            color: #95989A
+            text-decoration: none
+          i.icon
+            width: 20px
+            height: 20px
+            margin-right: 12px
+            &.icon-ok
+              background-image: url("../img/icon-ok.svg")
+            &.icon-close
+              background-image: url("../img/icon-close.svg")
+        a
+          display: inline-flex
+
+    .extends-toggle
+      display: none
+      cursor: pointer
+      background: #41BDE1
+      padding: 12px 0
+      color: #ffffff
+      margin: 0 -15px -15px -15px
+      @media screen and (max-width: $tablet-big)
+        display: flex
+        justify-content: center
+        align-items: center
+        div
+          display: flex
+          justify-content: center
+          align-items: center
+        .state-down
+          display: flex
+        .state-up
+          display: none
+      i.icon
+        width: 14.5px
+        height: 13px
+        margin-right: 5px
+        &.icon-down
+          background-image: url("../img/icon-down.svg")
+        &.icon-up
+          background-image: url("../img/icon-up.svg")
+    &.profile-hide
+      @media screen and (max-width: $tablet-big)
+        .extends
+          display: flex
+          flex-wrap: wrap
+          .extend:nth-child(1)
+            flex-basis: 50%
+      @media screen and (max-width: $phone-big)
+        .extends
+          .extend:nth-child(1)
+            flex-basis: 100%
+      .extends-toggle
+        @media screen and (max-width: $tablet-big)
+          .state-down
+            display: none
+          .state-up
+            display: flex
+
+  .btn
+    border-radius: 10px
+    text-decoration: none
+    padding: 14px 40px
+    font-size: 15px
+    @media screen and (max-width: $web-medium)
+      padding: 10px 25px
+      font-size: 11px
+    @media screen and (max-width: $web-small)
+      padding: 8px 17px
+      font-size: 11px
+    @media screen and (max-width: $tablet-big)
+      padding: 12px 13px
+      font-size: 18px
+    @media screen and (max-width: $tablet-medium)
+      padding: 11px 13px
+      font-size: 14px
+    @media screen and (max-width: $tablet-small)
+      padding: 9px 11px
+      font-size: 13px
+    @media screen and (max-width: $phone-big)
+      padding: 11px 16px
+      font-size: 13px
+    @media screen and (max-width: $phone-medium)
+      padding: 11px 14px
+      font-size: 13px
+    @media screen and (max-width: $phone-small)
+      padding: 11px 13px
+      font-size: 11px
+    &.btn-blue
+      border: 1px solid #2660A4
+      color: #2660A4
+      background: #ffffff
+      &:hover
+        border: 1px solid #2660A4
+        color: #ffffff
+        background: #2660A4
+      &:active, &:focus
+        border: 1px solid #2660A4
+        color: #ffffff
+        background: #143D6D
+    &.btn-purple
+      border: 1px solid #6C1E6C
+      color: #6D1E6D
+      background: #ffffff
+      &:hover
+        border: 1px solid #6C1E6C
+        color: #ffffff
+        background: #6C1E6C
+      &:active, &:focus
+        border: 1px solid #441044
+        color: #ffffff
+        background: #441044
+    &.btn-yellow
+      border: 1px solid #F79413
+      color: #F79413
+      background: #ffffff
+      &:hover
+        border: 1px solid #F79413
+        color: #ffffff
+        background: #F79413
+      &:active, &:focus
+        border: 1px solid #D47A05
+        color: #ffffff
+        background: #D47A05
+
+  .entities
+    display: flex
+    flex-wrap: wrap
+    align-self: flex-start
+    flex-grow: 1
+    @media screen and (max-width: $tablet-big)
+      align-self: stretch
+      justify-content: space-between
+    .entity
+      flex-basis: 50%
+      @media screen and (max-width: $tablet-big)
+        flex-basis: calc(50% - 15px)
+      @media screen and (max-width: $tablet-medium)
+        flex-basis: calc(50% - 7.5px)
+      @media screen and (max-width: $phone-big)
+        flex-basis: 100%
+      .block
+        margin: 0 0 30px 30px
+        @media screen and (max-width: $web-medium)
+          margin: 0 0 20px 20px
+        @media screen and (max-width: $web-small)
+          margin: 0 0 15px 15px
+        @media screen and (max-width: $tablet-big)
+          margin: 0 0 30px 0
+        @media screen and (max-width: $tablet-medium)
+          margin: 0 0 15px 0
+      .icon-edr
+        background-image: url("../img/icon-edr.svg")
+      .icon-btc
+        background-image: url("../img/icon-btc.svg")
+      .balance
+        h3
+          text-align: center
+          color: #95989A
+          font-size: 19px
+          margin-bottom: 23px
+          @media screen and (max-width: $web-medium)
+            font-size: 15px
+            margin-bottom: 9px
+          @media screen and (max-width: $web-small)
+            font-size: 15px
+            margin-bottom: 18px
+          @media screen and (max-width: $tablet-big)
+            font-size: 19px
+            margin-bottom: 23px
+          @media screen and (max-width: $tablet-medium)
+            font-size: 15px
+            margin-bottom: 9px
+          @media screen and (max-width: $tablet-small)
+            font-size: 15px
+            margin-bottom: 23px
+          @media screen and (max-width: $phone-big)
+            font-size: 19px
+            margin-bottom: 15px
+          @media screen and (max-width: $phone-medium)
+            font-size: 15px
+            margin-bottom: 18px
+          @media screen and (max-width: $phone-small)
+            font-size: 15px
+            margin-bottom: 13px
+        .total
+          text-align: center
+          position: relative
+          color: #39546C
+          display: flex
+          justify-content: center
+          align-items: center
+          font-size: 30px
+          height: 45px
+          margin-bottom: 27px
+          @media screen and (max-width: $web-medium)
+            font-size: 30px
+            height: 40px
+            margin-bottom: 15px
+          @media screen and (max-width: $web-small)
+            font-size: 24px
+            height: 30px
+            margin-bottom: 12px
+          @media screen and (max-width: $tablet-big)
+            font-size: 30px
+            height: 45px
+            margin-bottom: 30px
+          @media screen and (max-width: $tablet-medium)
+            font-size: 30px
+            height: 40px
+            margin-bottom: 15px
+          @media screen and (max-width: $tablet-small)
+            font-size: 24px
+            height: 30px
+            margin-bottom: 9px
+          @media screen and (max-width: $phone-big)
+            font-size: 37px
+            height: 60px
+            margin-bottom: 19px
+          @media screen and (max-width: $phone-medium)
+            font-size: 28px
+            height: 30px
+            margin-bottom: 12px
+          @media screen and (max-width: $phone-small)
+            font-size: 24px
+            height: 32px
+            margin-bottom: 13px
+          .icon
+            position: absolute
+            left: 0
+            width: 45px
+            height: 45px
+            @media screen and (max-width: $web-medium)
+              width: 40px
+              height: 40px
+            @media screen and (max-width: $web-small)
+              width: 30px
+              height: 30px
+            @media screen and (max-width: $tablet-big)
+              width: 45px
+              height: 45px
+            @media screen and (max-width: $tablet-medium)
+              width: 40px
+              height: 40px
+            @media screen and (max-width: $tablet-small)
+              width: 30px
+              height: 30px
+            @media screen and (max-width: $phone-big)
+              width: 60px
+              height: 60px
+            @media screen and (max-width: $phone-medium)
+              width: 30px
+              height: 30px
+            @media screen and (max-width: $phone-small)
+              width: 32px
+              height: 32px
+        .currency
+          color: #95989A
+          display: flex
+          justify-content: center
+          margin-bottom: 45px
+          font-size: 19px
+          @media screen and (max-width: $web-medium)
+            margin-bottom: 45px
+            font-size: 14px
+          @media screen and (max-width: $web-small)
+            margin-bottom: 30px
+            font-size: 13px
+          @media screen and (max-width: $tablet-big)
+            margin-bottom: 45px
+            font-size: 19px
+          @media screen and (max-width: $tablet-medium)
+            margin-bottom: 50px
+            font-size: 14px
+          @media screen and (max-width: $tablet-small)
+            margin-bottom: 30px
+            font-size: 13px
+          @media screen and (max-width: $phone-big)
+            margin-bottom: 45px
+            font-size: 19px
+          @media screen and (max-width: $phone-medium)
+            margin-bottom: 30px
+            font-size: 13px
+          @media screen and (max-width: $phone-small)
+            margin-bottom: 30px
+            font-size: 11px
+          span
+            margin: 0 13px
+        .buttons
+          display: flex
+          justify-content: space-around
+      .chart
+        .title
+          display: flex
+          align-items: center
+          color: #51697E
+          font-size: 19px
+          margin-bottom: 30px
+          @media screen and (max-width: $web-medium)
+            font-size: 15px
+            margin-bottom: 22px
+          @media screen and (max-width: $web-small)
+            font-size: 13px
+            margin-bottom: 16px
+          @media screen and (max-width: $tablet-big)
+            font-size: 19px
+            margin-bottom: 58px
+          @media screen and (max-width: $tablet-medium)
+            font-size: 15px
+            margin-bottom: 46px
+          @media screen and (max-width: $tablet-small)
+            font-size: 13px
+            margin-bottom: 43px
+          @media screen and (max-width: $phone-big)
+            font-size: 19px
+            margin-bottom: 55px
+          @media screen and (max-width: $phone-medium)
+            font-size: 15px
+            margin-bottom: 41px
+          @media screen and (max-width: $phone-small)
+            font-size: 13px
+            margin-bottom: 42px
+          .icon
+            width: 30px
+            height: 30px
+            margin-right: 15px
+            @media screen and (max-width: $web-medium)
+              width: 20px
+              height: 20px
+              margin-right: 10px
+            @media screen and (max-width: $web-small)
+              width: 15px
+              height: 15px
+              margin-right: 10px
+            @media screen and (max-width: $tablet-big)
+              width: 30px
+              height: 30px
+              margin-right: 15px
+            @media screen and (max-width: $tablet-medium)
+              width: 20px
+              height: 20px
+              margin-right: 10px
+            @media screen and (max-width: $tablet-small)
+              width: 15px
+              height: 15px
+              margin-right: 10px
+            @media screen and (max-width: $phone-big)
+              width: 30px
+              height: 30px
+              margin-right: 15px
+            @media screen and (max-width: $phone-medium)
+              width: 20px
+              height: 20px
+              margin-right: 10px
+        hr
+          border: none
+          border-bottom: 1px solid #EBEEF2
+          margin: 0 -30px 25px
+          @media screen and (max-width: $web-medium)
+            margin: 0 -20px 20px
+          @media screen and (max-width: $web-small)
+            margin: 0 -15px 15px
+        .chart-content
+          margin-bottom: 17px
+          img
+            max-width: 100%
+        p
+          color: #95989A
+          font-size: 17px
+          margin-bottom: 15px
+          @media screen and (max-width: $web-medium)
+            font-size: 15px
+            margin-bottom: 5px
+          @media screen and (max-width: $web-small)
+            font-size: 11px
+            margin-bottom: 5px
+          @media screen and (max-width: $tablet-big)
+            font-size: 19px
+            margin-bottom: 15px
+          @media screen and (max-width: $tablet-medium)
+            font-size: 15px
+            margin-bottom: 5px
+          @media screen and (max-width: $tablet-small)
+            font-size: 11px
+            margin-bottom: 5px
+          @media screen and (max-width: $phone-big)
+            font-size: 19px
+            margin-bottom: 15px
+          @media screen and (max-width: $phone-medium)
+            font-size: 13px
+            margin-bottom: 5px
+          @media screen and (max-width: $phone-small)
+            font-size: 11px
+            margin-bottom: 5px
+        .total
+          font-size: 30px
+          @media screen and (max-width: $web-small)
+            font-size: 24px
+          @media screen and (max-width: $tablet-big)
+            font-size: 31px
+          @media screen and (max-width: $tablet-medium)
+            font-size: 30px
+          @media screen and (max-width: $tablet-small)
+            font-size: 24px
+          @media screen and (max-width: $phone-big)
+            font-size: 31px
+          @media screen and (max-width: $phone-medium)
+            font-size: 28px
+          @media screen and (max-width: $phone-small)
+            font-size: 28px
+  .histories
+    flex: 1 1 990px
+    .history
+      h3
+        color: #000000
+        font-size: 35px
+        margin-bottom: 30px
+      hr
+        border: none
+        border-bottom: 1px solid #EBEEF2
+        margin: 0 -30px 25px
+        @media screen and (max-width: $web-medium)
+          margin: 0 -20px 20px
+        @media screen and (max-width: $web-small)
+          margin: 0 -15px 15px
+      .event
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .event-icon
+          .icon
+            display: flex
+            width: 60px
+            height: 60px
+            margin-right: 30px
+            &.icon-transfer
+              background-image: url("../img/icon-transfer.svg")
+        .event-info
+          flex-grow: 1
+
+.modal
+  width: 456px
+  height: 350px  /* Рaзмеры дoлжны быть фиксирoвaны */
+  border-radius: 10px
+  border: 1px solid #95989A
+  background: #fff
+  position: fixed /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+  top: 35% /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+  left: 43% /* пoлoвинa экрaнa слевa */
+  margin-top: -150px
+  margin-left: -150px /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+  display: none /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+  opacity: 0 /* пoлнoстью прoзрaчнo для aнимирoвaния */
+  z-index: 5 /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  padding: 40px
+  .modal-close
+    width: 21px
+    height: 21px
+    position: absolute
+    top: 10px
+    right: 10px
+    cursor: pointer
+    display: block
+    background-image: url("../img/icon-modal-close.svg")
+#overlay
+  z-index: 3 /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+  position: fixed /* всегдa перекрывaет весь сaйт */
+  background-color: #000 /* чернaя */
+  opacity: 0.8 /* нo немнoгo прoзрaчнa */
+  -moz-opacity: 0.8 /* фикс прозрачности для старых браузеров */
+  filter: alpha(opacity=80)
+  width: 100%
+  height: 100% /* рaзмерoм вo весь экрaн */
+  top: 0 /* сверху и слевa 0, oбязaтельные свoйствa! */
+  left: 0
+  cursor: pointer
+  display: none /* в oбычнoм сoстoянии её нет) */
+
+
+
+
+
