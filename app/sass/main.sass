@@ -366,7 +366,7 @@ header
 .block
   background-color: #ffffff
   border-radius: 5px
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15)
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15)
   padding: 30px
   @media screen and (max-width: $web-medium)
     padding: 20px
@@ -926,51 +926,499 @@ header
             font-size: 28px
           @media screen and (max-width: $phone-small)
             font-size: 28px
-  .histories
-    flex: 1 1 990px
-    .history
-      h3
-        color: #000000
-        font-size: 35px
-        margin-bottom: 30px
-      hr
-        border: none
-        border-bottom: 1px solid #EBEEF2
-        margin: 0 -30px 25px
-        @media screen and (max-width: $web-medium)
-          margin: 0 -20px 20px
-        @media screen and (max-width: $web-small)
-          margin: 0 -15px 15px
-      .event
+
+.history-section
+  padding-top: 60px
+  @media screen and (max-width: $tablet-big)
+    padding-top: 45px
+  @media screen and (max-width: $tablet-medium)
+    flex-direction: column-reverse
+  @media screen and (max-width: $tablet-small)
+    padding-top: 30px
+
+.histories
+  flex: 1 1 990px
+  margin-right: 30px
+  @media screen and (max-width: $web-medium)
+    flex: 1 1 720px
+    margin-right: 20px
+  @media screen and (max-width: $web-small)
+    flex: 1 1 615px
+    margin-right: 15px
+  @media screen and (max-width: $tablet-big)
+    flex: 1 1 615px
+    margin-right: 15px
+  @media screen and (max-width: $tablet-medium)
+    flex: 1 1 100%
+    margin-right: 0
+  .history
+    margin-bottom: 30px
+    .block
+      padding: 0
+    h3
+      font-family: 'Proxima', serif
+      color: #000000
+      border-bottom: 1px solid #EBEEF2
+      font-size: 35px
+      padding: 30px
+      @media screen and (max-width: $web-medium)
+        font-size: 24px
+        padding: 15px 20px
+      @media screen and (max-width: $web-small)
+        font-size: 20px
+        padding: 15px 20px
+      @media screen and (max-width: $tablet-big)
+        font-size: 20px
+        padding: 15px 20px
+      @media screen and (max-width: $tablet-medium)
+        font-size: 22px
+        padding: 20px
+      @media screen and (max-width: $tablet-small)
+        font-size: 24px
+        padding: 15px
+      @media screen and (max-width: $phone-big)
+        font-size: 24px
+        padding: 15px
+      @media screen and (max-width: $phone-medium)
+        font-size: 17px
+        padding: 15px
+      @media screen and (max-width: $phone-small)
+        font-size: 17px
+        padding: 15px
+    .event
+      border-bottom: 1px solid #EBEEF2
+      &:nth-last-child(1)
+        border-bottom: none
+        padding-bottom: 30px
+      .event-summary
         display: flex
         align-items: center
         justify-content: space-between
+        flex-wrap: wrap
         .event-icon
           .icon
             display: flex
             width: 60px
             height: 60px
-            margin-right: 30px
-            &.icon-transfer
+            margin: 0 30px
+            @media screen and (max-width: $web-medium)
+              margin: 0 20px
+            @media screen and (max-width: $web-small)
+              margin: 0 20px
+            @media screen and (max-width: $tablet-big)
+              width: 60px
+              height: 60px
+              margin: 0 20px
+            @media screen and (max-width: $tablet-medium)
+              margin: 0 20px
+            @media screen and (max-width: $tablet-small)
+              margin: 0 15px
+            @media screen and (max-width: $phone-big)
+              margin: 0 15px
+            @media screen and (max-width: $phone-medium)
+              width: 45px
+              height: 45px
+              margin: 0 15px
+            &.icon-event-transfer
               background-image: url("../img/icon-transfer.svg")
+            &.icon-event-out
+              background-image: url("../img/icon-event-out.svg")
+            &.icon-event-in
+              background-image: url("../img/icon-event-in.svg")
+            &.icon-event-issuance-1
+              background-image: url("../img/icon-event-issuance-1.svg")
+            &.icon-event-issuance-2
+              background-image: url("../img/icon-event-issuance-2.svg")
+            &.icon-event-issuance-3
+              background-image: url("../img/icon-event-issuance-3.svg")
+            &.icon-event-issuance-4
+              background-image: url("../img/icon-event-issuance-4.svg")
         .event-info
+          display: flex
+          flex-direction: column
+          justify-content: center
           flex-grow: 1
+          height: 145px
+          .event-title
+            color: #95989A
+            font-size: 17px
+          .event-body
+            font-family: 'Proxima', serif
+            color: #39546C
+            font-size: 30px
+            margin: 10px 0 15px
+          .event-time
+            display: flex
+            align-items: center
+            color: #95989A
+            font-size: 17px
+            .icon
+              width: 17px
+              height: 17px
+              margin-right: 7px
+              &.icon-clock
+                background: url("../img/icon-clock.svg")
+          @media screen and (max-width: $web-medium)
+            height: 100px
+            .event-title
+              font-size: 13px
+            .event-body
+              font-size: 22px
+              margin: 5px 0 7px
+            .event-time
+              font-size: 13px
+              .icon
+                width: 15px
+                height: 15px
+                margin-right: 5px
+          @media screen and (max-width: $web-small)
+            height: 100px
+            .event-title
+              font-size: 13px
+            .event-body
+              font-size: 18px
+              margin: 5px 0 7px
+            .event-time
+              font-size: 13px
+              .icon
+                width: 15px
+                height: 15px
+                margin-right: 5px
+          @media screen and (max-width: $tablet-big)
+            height: 100px
+            .event-title
+              font-size: 13px
+            .event-body
+              font-size: 18px
+              margin: 5px 0 7px
+            .event-time
+              font-size: 13px
+              .icon
+                width: 15px
+                height: 15px
+                margin-right: 5px
+          @media screen and (max-width: $tablet-medium)
+            height: 100px
+            .event-title
+              font-size: 13px
+            .event-body
+              font-size: 22px
+            .event-time
+              font-size: 13px
+              .icon
+                width: 15px
+                height: 15px
+                margin-right: 5px
+          @media screen and (max-width: $tablet-small)
+            height: 90px
+            .event-title
+              font-size: 13px
+            .event-body
+              font-size: 17px
+              margin: 5px 0 7px
+            .event-time
+              font-size: 13px
+              .icon
+                width: 15px
+                height: 15px
+                margin-right: 5px
+          @media screen and (max-width: $phone-big)
+            height: 100px
+            .event-title
+              font-size: 13px
+            .event-body
+              font-size: 17px
+              margin: 5px 0 7px
+            .event-time
+              font-size: 13px
+              .icon
+                width: 15px
+                height: 15px
+                margin-right: 5px
+          @media screen and (max-width: $phone-medium)
+            height: 100px
+            .event-title
+              font-size: 11px
+            .event-body
+              font-size: 13px
+              margin: 4px 0 5px
+            .event-time
+              font-size: 11px
+              .icon
+                width: 10px
+                height: 10px
+                margin-right: 5px
+          @media screen and (max-width: $phone-small)
+            .event-body
+              max-width: 195px
+        .event-sum
+          font-family: 'Proxima', serif
+          font-weight: 300
+          font-size: 30px
+          margin-bottom: 5px
+          margin-right: 30px
+          @media screen and (max-width: $web-medium)
+            font-size: 22px
+            margin-right: 20px
+          @media screen and (max-width: $web-small)
+            font-size: 18px
+            margin-right: 15px
+          @media screen and (max-width: $tablet-medium)
+            font-size: 22px
+            margin-right: 20px
+          @media screen and (max-width: $tablet-small)
+            font-size: 17px
+            margin-right: 15px
+          @media screen and (max-width: $phone-medium)
+            font-size: 13px
+            margin-right: 15px
+      .event-details
+        display: inline-flex
+        flex-direction: column
+        font-family: 'Proxima', serif
+        font-weight: 300
+        color: #000000
+        margin: 65px 0 20px 120px
+        font-size: 19px
+        .event-detail-item
+          display: flex
+          justify-content: space-between
+          width: 350px
+          margin-bottom: 34px
+          &.event-detail-item-small-text
+            font-size: 17px
+        .event-details-link
+          display: inline-flex
+          align-self: baseline
+          color: #2660A4
+          text-decoration: none
+          border-bottom: 1px solid #2660A4
+          font-size: 17px
+        @media screen and (max-width: $web-medium)
+          margin: 40px 0 25px 100px
+          font-size: 15px
+          .event-detail-item
+            width: 262px
+            margin-bottom: 20px
+            &.event-detail-item-small-text
+              font-size: 13px
+          .event-details-link
+            font-size: 13px
+        @media screen and (max-width: $web-small)
+          margin: 35px 0 20px 100px
+        @media screen and (max-width: $tablet-medium)
+          margin: 35px 0 15px 100px
+        @media screen and (max-width: $tablet-small)
+          margin: 25px 0 20px 90px
+        @media screen and (max-width: $phone-medium)
+          margin: 35px 15px 15px
+          font-size: 13px
+          display: flex
+          .event-detail-item
+            width: 100%
+            margin-bottom: 20px
+            &.event-detail-item-small-text
+              font-size: 13px
+          .event-details-link
+            font-size: 13px
+
+.filter
+  flex: 1 0 480px
+  @media screen and (max-width: $web-medium)
+    flex: 1 0 380px
+  @media screen and (max-width: $web-small)
+    flex: 1 0 300px
+  @media screen and (max-width: $tablet-big)
+    flex: 1 0 365px
+  @media screen and (max-width: $tablet-medium)
+    flex: 1 0 100%
+    margin-bottom: 35px
+  form
+    fieldset
+      margin-bottom: 30px
+      legend
+        font-size: 19px
+        color: #000000
+        margin-bottom: 20px
+      .period
+        position: relative
+        input
+          font-family: 'Proxima', serif
+          color: #95989A
+          width: 100%
+          padding: 7px 0
+          border: none
+          border-bottom: 1px solid #2660A4
+          font-size: 17px
+          &:focus
+            outline: none
+        .icon
+          display: inline-block
+          width: 35px
+          height: 35px
+          background-color: #2660A4
+          position: absolute
+          top: 0
+          right: 0
+          cursor: pointer
+          &.icon-calendar
+            background-image: url("../img/icon-calendar.svg")
+            background-size: 14px 17px
+            background-position: center
+      label
+        color: #95989A
+      [type="checkbox"]:not(:checked), [type="checkbox"]:checked
+        position: absolute
+        left: -9999px
+      [type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label
+        position: relative
+        padding-left: 1.95em
+        cursor: pointer
+        line-height: 30px
+        font-size: 17px
+      [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 20px
+        height: 20px
+        border: 1px solid #95989A
+        background: #fff
+        border-radius: 5px
+      [type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after
+        content: ''
+        width: 17px
+        height: 17px
+        background: url(../img/icon-check.svg) no-repeat
+        position: absolute
+        top: 5px
+        left: 4px
+      [type="checkbox"]:not(:checked) + label:after
+        opacity: 0
+        transform: scale(0)
+      [type="checkbox"]:checked + label:after
+        opacity: 1
+        transform: scale(1)
+      [type="checkbox"]:disabled:not(:checked) + label:before, [type="checkbox"]:disabled:checked + label:before
+        box-shadow: none
+        border-color: #bbb
+        background-color: #ddd
+      [type="checkbox"]:disabled:checked + label:after
+        color: #999
+      [type="checkbox"]:disabled + label
+        color: #aaa
+      label:hover:before
+        border: 2px solid #2660A4!important
+      @media screen and (max-width: $web-medium)
+        margin-bottom: 30px
+        legend
+          font-size: 17px
+          margin-bottom: 20px
+        .period
+          input
+            padding: 7px 0
+            font-size: 15px
+          .icon
+            width: 33px
+            height: 33px
+            &.icon-calendar
+              background-size: 14px 17px
+        [type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label
+          padding-left: 25px
+          line-height: 28px
+          font-size: 15px
+        [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before
+          left: 0
+          top: 0
+          width: 15px
+          height: 15px
+        [type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after
+          width: 12px
+          height: 12px
+          top: 4px
+          left: 3px
+      @media screen and (max-width: $web-small)
+        legend
+          font-size: 14px
+        .period
+          input
+            font-size: 13px
+          .icon
+            width: 30px
+            height: 30px
+        [type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label
+          padding-left: 23px
+          line-height: 25px
+          font-size: 13px
+        [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before
+          left: 0
+          top: 0
+          width: 15px
+          height: 15px
+        [type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after
+          width: 12px
+          height: 12px
+          top: 4px
+          left: 3px
+      @media screen and (max-width: $tablet-big)
+        margin-bottom: 30px
+        legend
+          font-size: 15px
+          margin-bottom: 20px
+        .period
+          input
+            padding: 7px 0
+            font-size: 15px
+          .icon
+            width: 33px
+            height: 33px
+            &.icon-calendar
+              background-size: 14px 17px
+        [type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label
+          padding-left: 23px
+          line-height: 25px
+          font-size: 13px
+        [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before
+          left: 0
+          top: 0
+          width: 15px
+          height: 15px
+        [type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after
+          width: 12px
+          height: 12px
+          top: 4px
+          left: 3px
+
+
+.fixed-overlay
+  display: none
+  position: fixed
+  overflow: auto
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0,0,0,0.5)
+
+.fixed-overlay__modal
+  text-align: center
+  white-space: nowrap
+
+.fixed-overlay__modal::after
+  display: inline-block
+  vertical-align: middle
+  width: 0
+  height: 100%
+  content: ''
 
 .modal
-  width: 456px
-  height: 350px  /* Рaзмеры дoлжны быть фиксирoвaны */
+  display: inline-block
+  vertical-align: middle
   border-radius: 10px
   border: 1px solid #95989A
-  background: #fff
-  position: fixed /* чтoбы oкнo былo в видимoй зoне в любoм месте */
-  top: 35% /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
-  left: 43% /* пoлoвинa экрaнa слевa */
-  margin-top: -150px
-  margin-left: -150px /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
-  display: none /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
-  opacity: 0 /* пoлнoстью прoзрaчнo для aнимирoвaния */
-  z-index: 5 /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
-  padding: 40px
+  background: #ffffff
+  position: relative
   .modal-close
     width: 21px
     height: 21px
@@ -980,20 +1428,49 @@ header
     cursor: pointer
     display: block
     background-image: url("../img/icon-modal-close.svg")
-#overlay
-  z-index: 3 /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
-  position: fixed /* всегдa перекрывaет весь сaйт */
-  background-color: #000 /* чернaя */
-  opacity: 0.8 /* нo немнoгo прoзрaчнa */
-  -moz-opacity: 0.8 /* фикс прозрачности для старых браузеров */
-  filter: alpha(opacity=80)
-  width: 100%
-  height: 100% /* рaзмерoм вo весь экрaн */
-  top: 0 /* сверху и слевa 0, oбязaтельные свoйствa! */
-  left: 0
-  cursor: pointer
-  display: none /* в oбычнoм сoстoянии её нет) */
 
+.modal_container
+  margin: 40px
+  padding: 0
+  text-align: left
+  white-space: normal
+  background-color: #fff
+  color: #000
+
+.modal-transfer
+  h3
+    font-size: 20px
+    color: #6C1E6C
+    margin-bottom: 25px
+  form
+    fieldset
+      margin-bottom: 30px
+      legend
+        color: #95989A
+        font-size: 14px
+        margin-bottom: 9px
+      input[type="text"]
+        border: 1px solid #6C1E6C
+        border-radius: 10px
+        width: 460px
+        height: 40px
+        padding: 0 10px
+        outline: none
+        &:focus
+          background: #F5F5F5
+    input[type="submit"]
+      border: 1px solid transparent
+      border-radius: 10px
+      cursor: pointer
+      outline: none
+      background: #6C1E6C
+      color: #ffffff
+      font-size: 15px
+      padding: 20px 40px
+      &:hover, &:focus
+        border: 1px solid #6C1E6C
+        background: #ffffff
+        color: #6C1E6C
 
 
 

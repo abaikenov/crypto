@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="5590.637 -641.8 31.153 39.899">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #fff;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_1958" data-name="Group 1958" transform="translate(0 -1283)">
+    <g id="Group_1724" data-name="Group 1724" transform="translate(5136.637 465.2)">
+      <g id="Group_1723" data-name="Group 1723" transform="translate(454 184.746)">
+        <g id="Rectangle_872" data-name="Rectangle 872" class="cls-1">
+          <rect class="cls-2" width="9.163" height="9.163"/>
+          <rect class="cls-3" x="0.5" y="0.5" width="8.163" height="8.163"/>
+        </g>
+        <g id="Rectangle_873" data-name="Rectangle 873" class="cls-1" transform="translate(10.995)">
+          <rect class="cls-2" width="9.163" height="9.163"/>
+          <rect class="cls-3" x="0.5" y="0.5" width="8.163" height="8.163"/>
+        </g>
+        <g id="Rectangle_874" data-name="Rectangle 874" class="cls-1" transform="translate(21.99)">
+          <rect class="cls-2" width="9.163" height="9.163"/>
+          <rect class="cls-3" x="0.5" y="0.5" width="8.163" height="8.163"/>
+        </g>
+        <g id="Rectangle_875" data-name="Rectangle 875" class="cls-1" transform="translate(0 10.995)">
+          <rect class="cls-2" width="9.163" height="9.163"/>
+          <rect class="cls-3" x="0.5" y="0.5" width="8.163" height="8.163"/>
+        </g>
+        <g id="Rectangle_876" data-name="Rectangle 876" class="cls-1" transform="translate(10.995 10.995)">
+          <rect class="cls-2" width="9.163" height="9.163"/>
+          <rect class="cls-3" x="0.5" y="0.5" width="8.163" height="8.163"/>
+        </g>
+        <g id="Rectangle_877" data-name="Rectangle 877" class="cls-1" transform="translate(21.99 10.995)">
+          <rect class="cls-2" width="9.163" height="9.163"/>
+          <rect class="cls-3" x="0.5" y="0.5" width="8.163" height="8.163"/>
+        </g>
+        <g id="Rectangle_878" data-name="Rectangle 878" class="cls-1" transform="translate(0 21.99)">
+          <rect class="cls-2" width="9.163" height="9.163"/>
+          <rect class="cls-3" x="0.5" y="0.5" width="8.163" height="8.163"/>
+        </g>
+        <g id="Rectangle_879" data-name="Rectangle 879" class="cls-1" transform="translate(10.995 21.99)">
+          <rect class="cls-2" width="9.163" height="9.163"/>
+          <rect class="cls-3" x="0.5" y="0.5" width="8.163" height="8.163"/>
+        </g>
+        <g id="Rectangle_880" data-name="Rectangle 880" class="cls-1" transform="translate(21.99 21.99)">
+          <rect class="cls-2" width="9.163" height="9.163"/>
+          <rect class="cls-3" x="0.5" y="0.5" width="8.163" height="8.163"/>
+        </g>
+      </g>
+      <path id="Path_903" data-name="Path 903" class="cls-1" d="M.5.5H29.82V6H.5Z" transform="translate(454.416 176)"/>
+    </g>
+  </g>
+</svg>

@@ -18,21 +18,39 @@ $(document).ready(function() {
     $('[data-toggle="modal"]').click( function(event){
         var that = $(this);
         event.preventDefault();
-        $('#overlay').fadeIn(400,
-            function(){
-                $(that.data('target'))
-                    .css('display', 'block')
-                    .animate({opacity: 1, top: '35%'}, 200);
-            });
+        $(that.data('target'))
+            .css('display', 'block')
+            .animate({opacity: 1}, 200);
     });
 
-    $('.modal-close, #overlay').click( function(){
-        $('.modal')
-            .animate({opacity: 0, top: '45%'}, 200,
+    $('.modal-close').click( function(){
+        $('.fixed-overlay')
+            .animate({opacity: 0}, 200,
                 function(){
                     $(this).css('display', 'none');
-                    $('#overlay').fadeOut(400);
                 }
             );
     });
+
+    eventsViewFixForMobile();
+    $(window).resize(function () {
+        eventsViewFixForMobile();
+    });
 });
+
+function eventsViewFixForMobile() {
+    if($( window ).width() <= 555) {
+        $('.event-summary').each(function () {
+            var that = $(this);
+            var sum = that.find('.event-sum');
+            var body = that.find('.event-body');
+            body.after(sum);
+        })
+    } else {
+        $('.event-summary').each(function () {
+            var that = $(this);
+            var sum = that.find('.event-sum');
+            that.append(sum);
+        })
+    }
+}

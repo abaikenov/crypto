@@ -108,7 +108,7 @@
                 <div class="buttons">
                     <a href="#" class="btn btn-yellow">Пополнить</a>
                     <a href="#" class="btn btn-yellow">Вывести</a>
-                    <a href="#" class="btn btn-yellow">Отправить</a>
+                    <a href="#" class="btn btn-yellow" data-toggle="modal" data-target="#modal">Отправить</a>
                 </div>
             </div>
         </div>
@@ -120,7 +120,7 @@
                 </div>
                 <hr>
                 <div class="chart-content">
-                    <img src="img/chart.png" />
+                    <img src="img/chart.png"/>
                 </div>
                 <p>Добыто за все время:</p>
                 <div class="total text-purple">100.2587 EDR</div>
@@ -134,7 +134,7 @@
                 </div>
                 <hr>
                 <div class="chart-content">
-                    <img src="img/chart.png" />
+                    <img src="img/chart.png"/>
                 </div>
                 <p>Добыто за все время:</p>
                 <div class="total text-yellow">1.12378945 BCT</div>
@@ -148,7 +148,7 @@
                 </div>
                 <hr>
                 <div class="chart-content">
-                    <img src="img/chart.png" />
+                    <img src="img/chart.png"/>
                 </div>
                 <p>Добыто за все время:</p>
                 <div class="total text-purple">100.2587 EDR</div>
@@ -157,11 +157,27 @@
     </div>
 </section>
 
-<div class="modal" id="modal">
-    <span class="modal-close"></span>
-    <!-- Тут любoе сoдержимoе -->
+<div class="fixed-overlay fixed-overlay__modal" id="modal">
+    <div class="modal">
+        <span class="modal-close"></span>
+        <div class="modal_container">
+            <div class="modal-transfer">
+                <h3>Перевод EDR на другой аккаунт</h3>
+                <form>
+                    <fieldset>
+                        <legend>Введите название аккаунта:</legend>
+                        <input type="text"/>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Введите сумму:</legend>
+                        <input type="text"/>
+                    </fieldset>
+                    <input type="submit" value="Перевести">
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
-<div id="overlay"></div>
 
 <script type="text/javascript" src="js/libs.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
