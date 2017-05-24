@@ -73,6 +73,8 @@ body
       display: flex
       justify-content: space-between
       max-width: 1530px
+      padding-left: 15px
+      padding-right: 15px
       padding-top: 39px
       padding-bottom: 0
       margin: 0 auto 210px
@@ -137,6 +139,8 @@ body
       justify-content: space-between
       max-width: 1530px
       margin: 0 auto
+      padding-left: 15px
+      padding-right: 15px
       @media screen and (max-width: $main-web-medium)
         max-width: 960px
       @media screen and (max-width: $main-tablet-landscape)
@@ -178,6 +182,7 @@ body
       .buttons
         display: flex
         flex-direction: row
+        margin-bottom: 30px
         @media screen and (max-width: $main-phone-small)
           flex-direction: column
         .btn
@@ -295,23 +300,14 @@ header
 .container
   display: flex
   margin: 0 auto
-  max-width: 1500px
+  padding: 0 15px
+  max-width: 1470px
   @media screen and (max-width: $web-medium)
-    max-width: 1120px
+    max-width: 1090px
   @media screen and (max-width: $web-small)
-    max-width: 930px
+    max-width: 900px
   @media screen and (max-width: $tablet-big)
-    max-width: 990px
-  @media screen and (max-width: $tablet-medium)
-    max-width: 735px
-  @media screen and (max-width: $tablet-small)
-    max-width: 615px
-  @media screen and (max-width: $phone-big)
-    max-width: 525px
-  @media screen and (max-width: $phone-medium)
-    max-width: 330px
-  @media screen and (max-width: $phone-small)
-    max-width: 285px
+    max-width: 960px
 
 .logo
   background-image: url("../img/logo.png")
@@ -578,7 +574,7 @@ header
   .btn
     border-radius: 10px
     text-decoration: none
-    padding: 14px 40px
+    padding: 13px 23px
     font-size: 15px
     @media screen and (max-width: $web-medium)
       padding: 10px 25px
@@ -995,6 +991,8 @@ header
         align-items: center
         justify-content: space-between
         flex-wrap: wrap
+        @media screen and (max-width: $tablet-medium)
+          flex-wrap: nowrap
         .event-icon
           .icon
             display: flex
@@ -1148,9 +1146,6 @@ header
                 width: 10px
                 height: 10px
                 margin-right: 5px
-          @media screen and (max-width: $phone-small)
-            .event-body
-              max-width: 195px
         .event-sum
           font-family: 'Proxima', serif
           font-weight: 300
@@ -1210,6 +1205,9 @@ header
           margin: 35px 0 15px 100px
         @media screen and (max-width: $tablet-small)
           margin: 25px 0 20px 90px
+        @media screen and (max-width: $phone-big)
+          .event-detail-item
+            width: 240px
         @media screen and (max-width: $phone-medium)
           margin: 35px 15px 15px
           font-size: 13px
@@ -1428,6 +1426,9 @@ header
     cursor: pointer
     display: block
     background-image: url("../img/icon-modal-close.svg")
+    @media screen and (max-width: $tablet-small)
+      width: 11px
+      height: 11px
 
 .modal_container
   margin: 40px
@@ -1436,6 +1437,8 @@ header
   white-space: normal
   background-color: #fff
   color: #000
+  @media screen and (max-width: $tablet-small)
+    margin: 20px
 
 .modal-transfer
   h3
@@ -1471,6 +1474,24 @@ header
         border: 1px solid #6C1E6C
         background: #ffffff
         color: #6C1E6C
+  @media screen and (max-width: $tablet-small)
+    h3
+      font-size: 15px
+      margin-bottom: 15px
+    form
+      fieldset
+        margin-bottom: 20px
+        legend
+          font-size: 14px
+          margin-bottom: 9px
+        input[type="text"]
+          width: calc(100% - 22px)
+          height: 35px
+          padding: 0 10px
+      input[type="submit"]
+        width: 100%
+        font-size: 15px
+        padding: 12px 15px
 
 
 
