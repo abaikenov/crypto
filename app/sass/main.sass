@@ -77,20 +77,20 @@ body
       padding-right: 15px
       padding-top: 39px
       padding-bottom: 0
-      margin: 0 auto 210px
+      margin: 0 auto 150px
       background: none
       @media screen and (max-width: $main-web-medium)
         max-width: 960px
         padding-top: 23px
-        margin-bottom: 132px
+        margin-bottom: 110px
       @media screen and (max-width: $main-tablet-landscape)
         padding: 0 15px
         max-width: 995px
         padding-top: 15px
-        margin-bottom: 136px
+        margin-bottom: 110px
       @media screen and (max-width: $main-tablet-portrait)
         max-width: 720px
-        margin-bottom: 174px
+        margin-bottom: 130px
       @media screen and (max-width: $main-phone-big)
         max-width: 450px
         margin-bottom: 70px
@@ -186,11 +186,14 @@ body
         @media screen and (max-width: $main-phone-small)
           flex-direction: column
         .btn
+          text-align: center
           padding: 17px 38px
           text-decoration: none
           color: #ffffff
           font-size: 16px
           border-radius: 5px
+          @media screen and (max-width: $main-phone-big)
+            padding: 13px 22px
         .btn-blue
           background-color: #2660A4
           margin-right: 15px
