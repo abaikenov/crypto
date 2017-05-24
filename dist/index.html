@@ -10,7 +10,7 @@
 <body class="main">
 <header>
     <div class="logo">CryptoPoint</div>
-    <div class="btn-sign">Войти</div>
+    <div class="btn-sign" data-toggle="modal" data-target="#signup">Войти</div>
 </header>
 
 <section>
@@ -27,5 +27,56 @@
         <a class="btn btn-orange" href="#">Зарегистрироваться</a>
     </div>
 </section>
+
+<div class="fixed-overlay fixed-overlay__modal" id="signin">
+    <div class="modal modal-form">
+        <span class="modal-close"></span>
+        <div class="modal_container">
+            <h3>Вход</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Введите логин либо почту"/>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Введите пароль"/>
+                </div>
+                <input class="btn-blue" type="submit" value="Войти">
+                <p class="small">Нажав «Зарегистрироваться на GitHub», вы соглашаетесь с нашими условиями предоставления
+                    услуг и политикой конфиденциальности . Мы будем регулярно посылать Вам счета связанных электронных
+                    писем.</p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-overlay fixed-overlay__modal" id="signup">
+    <div class="modal modal-form">
+        <span class="modal-close"></span>
+        <div class="modal_container">
+            <h3>Регистрация</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Придумайте логин"/>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Введите свою почту"/>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Придумайте пароль"/>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Повторите пароль"/>
+                </div>
+                <input class="btn-orange" type="submit" value="Зарегистрироваться">
+                <p class="small">Нажав «Зарегистрироваться на GitHub», вы соглашаетесь с нашими условиями предоставления
+                    услуг и политикой конфиденциальности . Мы будем регулярно посылать Вам счета связанных электронных
+                    писем.</p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
